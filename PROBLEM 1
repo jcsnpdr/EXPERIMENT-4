@@ -1,0 +1,65 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	int  choice, a, b;
+	double div, add, sub, mul, mod;
+	char yes;
+
+	do
+	{
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << "           WHAT DO YOU WANT TO DO?           " << endl;
+	cout << "1. Add" << endl;
+	cout << "2. Subtract" << endl;
+	cout << "3. Multiply" << endl;
+	cout << "4. Divide" << endl;
+	cout << "5. Modulus" << endl;
+	cout << endl;
+	cout << "Enter numbers 1-5 for your choice: ";
+	cin >> choice;
+	cout << "Enter two integer numbers: ";
+	cin >> a >> b;
+	
+		switch(choice)
+		{
+		case 1:
+				add = a + b;
+				cout << "Result: " << add << endl;
+				break;
+		case 2:
+				sub = a - b;
+				cout << "Result: " << sub << endl;
+				break;
+		case 3:
+				mul = a * b;
+				cout << "Result: " << mul << endl;
+				break;
+		case 4:
+				div = a / b;
+				cout << "Result: " << div << endl;
+				break;
+		case 5:
+				mod = a % b;
+				cout << "Result: " << mod << endl;
+				break;
+		default:
+				cout << "ERROR! INVALID INPUT" << endl;
+		}	
+	
+	cout << "Press letter y for yes to continue: ";
+	cin >> yes;
+	
+	}while(yes == 'y' || yes == 'Y');
+	cout << "GOODBYE! THANK YOU!";
+	
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	
+}
